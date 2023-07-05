@@ -1,0 +1,47 @@
+/* default CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* global color */
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #00ff00;
+  }
+/* custom font */
+@font-face {
+    font-family: 'solaimanlipi';
+    src: url('/fonts/SolaimanLipi.ttf');
+}
+/* flex  */
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    justify-items: center;
+}
+/* text alignment */
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+h1{
+    font-family: 'solaimanlipi';
+  
+}
