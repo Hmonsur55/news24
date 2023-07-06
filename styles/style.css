@@ -51,3 +51,9 @@ h1{
     font-family: var(--font-family);
   
 }
+/* === HeaderArea Start === */
+/* topHeader */
+.topHeaderGrid{
+    display: flex;
+    justify-content: space-between;
+}
