@@ -8,16 +8,18 @@
     max-width: 1700px;
     margin: 0 auto;
 }
-/* global color */
-:root {
-    --primary-color: #ff0000;
-    --secondary-color: #00ff00;
-  }
 /* custom font */
 @font-face {
     font-family: 'solaimanlipi';
     src: url('/fonts/SolaimanLipi.ttf');
 }
+/* global color */
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #00ff00;
+    --font-family :'solaimanlipi', sans-serif;
+  }
+
 /* flex  */
 .flex{
     display: flex;
@@ -46,6 +48,6 @@
 }
 
 h1{
-    font-family: 'solaimanlipi';
+    font-family: var(--font-family);
   
 }
