@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+}
 /* global color */
 :root {
     --primary-color: #ff0000;
