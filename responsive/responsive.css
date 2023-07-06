@@ -1,17 +1,28 @@
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
-   
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-   
-}
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-   
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
     
 }
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-  
+
+/* desktop 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+
+/* tablet and  768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* small mobile 320px */
+@media only screen and (max-width: 767px) {
    
+}
+
+/* lg mobile size 480 */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   .container{
+    width: 450px;
+   }
 }
 /*  */
