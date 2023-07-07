@@ -14,7 +14,7 @@ ul li{
 /* custom font */
 @font-face {
     font-family: 'solaimanlipi';
-    src: url('/fonts/SolaimanLipi.ttf');
+    src: url('fonts/SolaimanLipi.ttf');
 }
 /* global color */
 :root {
@@ -64,7 +64,7 @@ ul li{
     color: #333;
     font-size: 16px;
     line-height: 22px;
-    font-family: var(--font-family);
+    font-family: var(--primary-font);
     font-weight: 400;
 }
 
@@ -78,8 +78,6 @@ ul li{
   background-color: #f0f0f0;
   border: 1px solid #d7d7d7;
 }
-
-
 
 
 /* === first section === */
@@ -131,6 +129,5 @@ padding: 0 14px;
     font-weight: 700;
     line-height: 26px;
     margin-bottom: 5px;
+    font-family: var(--primary-font);
 }
-
-/*  */g
