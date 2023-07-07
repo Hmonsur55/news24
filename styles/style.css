@@ -11,6 +11,9 @@
 ul li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 /* custom font */
 @font-face {
     font-family: 'solaimanlipi';
@@ -21,7 +24,9 @@ ul li{
     --primary-color: #ff0000;
     --secondary-color: #00ff00;
     --title-color: #222222;
+    --third-color:#fff;
     --text-body-color: #5a5a5a;
+    --background-color: #f0f0f0;
     --primary-font :'solaimanlipi', sans-serif;
     --border: #e2e2e2;
   }
@@ -91,15 +96,27 @@ ul li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    border-right: 1px solid var(--border);
-    padding: 0px 14px;
+    border-radius: 10px;
+    margin-left:14px;
+    background: var(--background-color);
+}
+.firstLeadNews .desc{
+
+    padding: 15px 10px 10px 10px;
+   
 }
 .firstSectionTabContent{
     padding: 0 14px;
+    margin-left: 14px;
+    border-left: 1px solid var(--border);
 }
 
 .bigThambnail{
     max-width: 640px;
+}
+.smThambnail{
+width: 172px;
+height: 103px;
 }
 .mainTitle{
     font-size: 28px;
@@ -113,6 +130,9 @@ ul li{
     font-family: var(--primary-font);
 }
 
+.LeadNewsListItem:first-child {
+    margin-top: 0;
+}
 .LeadNewsListItem {
     border-bottom: 1px solid var(--border) ;
     margin-top: 15px;
@@ -131,3 +151,48 @@ padding: 0 14px;
     margin-bottom: 5px;
     font-family: var(--primary-font);
 }
+
+.gridLayoutTop2{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    margin-top: 50px;
+}
+
+.gridLayoutTop2 .gridItems .gridInner {
+  border-right: 1px solid var(--border);
+  padding: 0 14px;
+}
+.gridLayoutTop2 .gridItems:nth-child(4) {
+padding: 20px 0;
+
+}
+.gridLayoutTop2 .gridItems:nth-child(5) {
+padding: 20px 0;
+
+}
+.gridLayoutTop2 .gridItems:nth-child(6) {
+padding: 20px 0;
+
+}
+
+.gridLayoutTop2 .gridItems .desc {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0px;
+}
+.gridLayoutTop2 .gridItems:nth-child(4) .desc {
+    border-bottom: none;
+}
+.gridLayoutTop2 .gridItems:nth-child(5) .desc {
+    border-bottom: none;
+}
+.gridLayoutTop2 .gridItems:nth-child(6) .desc {
+    border-bottom: none;
+}
+
+
+.gridLayoutTop2 .gridItems img{
+   width: 100%;
+}
+/* .gridLayoutTop2 .gridItems .desc{
+   padding: 4px 2px 10px;
+} */
