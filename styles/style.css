@@ -43,7 +43,7 @@ img{
 .secTitle{
   margin-top: 40px;
   border-bottom: 1px solid var(--border);
-  margin: 0px 14px;
+  margin: 40px 14px 0px;
   padding-bottom: 20px;
 }
 .secTitle a h2{
@@ -483,6 +483,153 @@ color: var(--primary-color);
     font-family: var(--primary-font);
 }
 
+/* === Second Section === */
+.itFactorVideo{
+  background-color: var(--title-color);
+  padding: 50px 0;
+}
+.tabTitle {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--border);
+	padding-bottom: 4px;
+	margin-bottom: 24px;
+	align-items: center;
+}
+.tabTitle span {
+	font-size: 22px;
+  line-height: 22px;
+	color: var(--third-color);
+	font-family: var(--primary-font);
+	font-weight: 700;
+	margin-right: 10px;
+}
+.tabTitle i {
+	font-size: 22px;
+	color: var(--third-color);
+}
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
+}
+.videoTabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.tabName {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin: 0 0 0 8px;
+}
+.tabName.active {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+.tabName {
+  font-family: var(--primary-font);
+  background-color: #676767;
+  color: var(--third-color);
+}
+.tabGrid8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap:20px;
+}
+.descVideo h3{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  padding: 20px 12px;
+  color: var(--third-color);
+}
+.descVideo h3:hover{
+  color: var(--primary-color);
+}
+.tabGrid8Item{
+  position: relative;
+  background-color: #121212;
+}
+.videoIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  background-color: rgba(29, 117, 167, .7);
+  border-radius: 50px;
+}
+.videoIcon i {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: var(--third-color);
+}
+/* videotab2 */
+.VideoTab2{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 20px;
+}
+.smallTab2Item, .bigVideoTab2Item{
+  position: relative;
+}
+.bigVideoTab2Item .videoIcon2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(29, 117, 167, .7);
+  border-radius: 50px;
+}
+.bigVideoTab2Item .videoIcon2 i {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+	font-size: 25px;
+	color: var(--third-color);
+}
+.smallTab2Item .videoIcon3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-color: rgba(29, 117, 167, .7);
+  border-radius: 50px;
+}
+.smallTab2Item .videoIcon3 i {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+	font-size: 12px;
+	color: var(--third-color);
+}
+.videoBtn {
+  text-align: right;
+  margin-top: 16px;
+}
+.videoBtn a{
+  background: var(--primary-color);
+  color: var(--third-color);
+  padding: 10px 6px;
+  font-family: var(--primary-font);
+}
 
 /* জাতীয় */
 
