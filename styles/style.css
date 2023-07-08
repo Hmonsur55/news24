@@ -14,9 +14,67 @@ ul li {
 a {
   text-decoration: none;
 }
-.title{
-    color: var(--title-color);
+img{
+  max-width: 100%;
 }
+.title {
+  -webkit-line-clamp: 2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 5px;
+  font-family: var(--primary-font);
+  color: var(--title-color);
+}
+.title:hover{
+  color: var(--primary-color);
+}
+.brief {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: var(--text-body-color);
+  line-height: 24px;
+}
+.desc{
+  padding:0 10px 10px 10px;
+}
+
+.secTitle{
+  margin-top: 40px;
+  border-bottom: 1px solid var(--border);
+  margin: 0px 14px;
+  padding-bottom: 20px;
+}
+.secTitle a h2{
+  margin-right: 5px;
+}
+.secTitle a h2 img{
+width: 25px;
+height: 25px;
+margin-right: 7px;
+}
+.secTitle a h2 span{
+font-size: 18px;
+font-family: var(--primary-font);
+color: var(--primary-color);
+}
+.secTitle i {
+  font-size: 18px;
+  align-self: center;
+  color: var(--primary-color);
+}
+.secTitle ul li {
+  color: var(--title-color);
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+.secTitle ul{
+ align-items: center;
+}
+
 /* custom font */
 @font-face {
   font-family: "solaimanlipi";
@@ -271,9 +329,7 @@ a {
   margin-left: 14px;
   background: var(--background-color);
 }
-.firstLeadNews .desc {
-  padding: 15px 10px 10px 10px;
-}
+
 .firstSectionTabContent {
   padding: 0 14px;
   margin-left: 14px;
@@ -284,8 +340,8 @@ a {
   max-width: 640px;
 }
 .smThambnail {
-  width: 172px;
-  height: 100px;
+  width: 150px;
+  height: 90px;
 }
 .mainTitle {
   font-size: 28px;
@@ -314,18 +370,9 @@ a {
   border-bottom: none;
 }
 
-.LeadNewsListItem .desc {
+/* .LeadNewsListItem .desc {
   padding: 0 14px;
-}
-
-.LeadNewsListItem .desc .title {
-  -webkit-line-clamp: 2;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-bottom: 5px;
-  font-family: var(--primary-font);
-}
+} */
 
 .gridLayoutTop2 {
   display: grid;
@@ -366,18 +413,7 @@ a {
   border-bottom: none;
 }
 
-.gridLayoutTop2 .gridItems .title {
-  font-size: 18px;
-  font-family: var(--primary-font);
-  color: var(--title-color);
-}
-.gridLayoutTop2 .gridItems .brief {
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: var(--primary-font);
-  color: var(--text-body-color);
-  line-height: 24px;
-}
+
 .gridLayoutTop2 .gridItems img {
   width: 100%;
 }
@@ -445,4 +481,61 @@ a {
     text-align: center;
     text-decoration: none;
     font-family: var(--primary-font);
+}
+
+
+/* জাতীয় */
+
+.nationalNews{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+margin-top: 15px;
+}
+.nationalNewsItem{
+  border-right:1px solid var(--border);
+  padding: 0px 14px;
+}
+.nationalNewsItem:nth-child(3){
+  border-right:none;
+}
+
+
+
+.smallThumbnailWithTitle:first-child {
+  margin-top: 0;
+}
+.smallThumbnailWithTitle {
+  border-bottom: 1px solid var(--border);
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.smallThumbnailWithTitle:nth-child(4) {
+  border-bottom: none;
+}
+
+.staticAdd{
+  margin:30px 0px;
+}
+
+/*  */
+.politicsParrents{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 30px 14px 0px;
+}
+.politicsParrents .item:first-child{
+  border-right: 1px solid var(--border);
+}
+.politicsRightInner{
+  display: flex;
+
+}
+.politicsRightInner .itemChild:first-child{
+border-right: 1px solid var(--border);
+padding: 0 14px;
+
+}
+.politicsRightInner .itemChild:last-child{
+padding-left:14px;
+
 }
